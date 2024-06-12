@@ -11,3 +11,52 @@ body{
 a{
   text-decoration: none;
 }
+
+form {
+  
+  
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  
+}
+
+label span {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.8em 0em;
+  background-color: transparent;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #00856F;
+  
+}
+
+.btn {
+  background-color: #00856F;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  text-decoration: none;
+
+}

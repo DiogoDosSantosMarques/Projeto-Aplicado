@@ -15,6 +15,7 @@ import Login from './pages/Login/Login';
 import Anuncio from './pages/Anuncio/Anuncio';
 import EditarAnuncio from './pages/EditarAnuncio/EditarAnuncio';
 import Cuidadores from './pages/AgendarConsulta/Cuidadores';
+import CuidadorId from './pages/AgendarConsulta/CuidadorId';
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
 
     <Route path='/' element={<Home />} />
     <Route path='/cuidadores' element={<Cuidadores/>} />
+    <Route path='/cuidadorid' element={<CuidadorId/>} />
     <Route path='/anuncio' element={<Anuncio/>} />
     <Route path='/editAnuncio' element={<EditarAnuncio/>} />
     <Route path='/cadastro' element={<Cadastro />} />
