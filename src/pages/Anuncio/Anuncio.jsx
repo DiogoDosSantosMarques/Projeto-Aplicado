@@ -44,15 +44,6 @@ const Anuncio = () => {
     </label>
 
 
-    <label>
-
-    <span>Endereço:</span>
-
-    <input type="text" name="text" required placeholder="Cidade e Bairro: "/>
-
-
-    </label>
-
 
     <label>
 

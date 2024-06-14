@@ -55,10 +55,6 @@ const Cadastro = () => {
           }} required placeholder="Confirme sua Senha" />
         </label>
         {erroSenha && <p className={styles.error}>As senhas não coincidem.</p>}
-        <label>
-          <span>Conte um Pouco sobre você:</span>
-          <textarea value={biografia} onChange={(e) => setBiografia(e.target.value)} required placeholder="Biografia" />
-        </label>
         <button type="submit" className="btn">Cadastrar</button>
       </form>
     </div>

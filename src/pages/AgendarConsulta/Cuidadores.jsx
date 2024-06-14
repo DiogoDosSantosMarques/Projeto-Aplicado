@@ -33,6 +33,14 @@ const Cuidadores = () => {
      
       </div>
 
+
+      <div>
+
+      <img src={cuidadora5} alt="" />
+      <button className="btn"> Ver Detalhes</button>
+      
+      </div>
+
       <div>
         
       <img src={cuidadora3} alt="" />
@@ -46,12 +54,7 @@ const Cuidadores = () => {
       <button className="btn"> Ver Detalhes</button>
       </div>
 
-      <div>
-
-      <img src={cuidadora5} alt="" />
-      <button className="btn"> Ver Detalhes</button>
       
-      </div>
 
       <div>
 
