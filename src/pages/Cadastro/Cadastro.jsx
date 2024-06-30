@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from "./Cadastro.module.css";
 import cadastroImage from '../../img/cadastro.png';
-import { addUser } from '../../../controllers/user';
 
 const Cadastro = () => {
   const [nome, setNome] = useState('');
