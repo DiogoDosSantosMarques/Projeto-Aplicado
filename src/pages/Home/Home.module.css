@@ -1,0 +1,26 @@
+.container{
+    margin: 0 auto;
+    width: 95%;
+    height: 500px;
+}
+
+.frase{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.frase h3{
+    font-size: 35px;
+    color: #00856F;
+    margin-left: 10%;
+}
+
+
+.frase img{
+    width: 20%;
+    border-radius: 40px;
+    margin-left: 20%;
+    border: 10px solid #00856F;
+}

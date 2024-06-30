@@ -7,7 +7,7 @@ const NavBar = () => {
 
         <NavLink to='/'>
 
-         Home
+         To Care
 
         </NavLink>
 
