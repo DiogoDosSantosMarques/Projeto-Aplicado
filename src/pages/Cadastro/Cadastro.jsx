@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import styles from "./Cadastro.module.css";
-import cadastroImage from '../../img/cadastro.png';
+import styles from './Cadastro.module.css'; // Importando estilos CSS
 
 const Cadastro = () => {
   const [nome, setNome] = useState('');
@@ -12,15 +11,18 @@ const Cadastro = () => {
   const [biografia, setBiografia] = useState('');
   const [experiencia, setExperiencia] = useState('');
   const [erroSenha, setErroSenha] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+  
+    // Verifica se as senhas coincidem
     if (senha !== confirmarSenha) {
       setErroSenha(true);
       return;
     }
-
-    const values = {
+  
+    const userData = {
       nome,
       dataNascimento,
       endereco,
@@ -29,27 +31,43 @@ const Cadastro = () => {
       biografia,
       experiencia,
     };
-
-    addUser(values, (err, data) => {
-      if (err) {
-        console.error(err);
-        // handle error
-      } else {
-        console.log(data);
-        // handle success
+  
+    try {
+      const response = await fetch('http://SG-cuidadoaoidoso-9180-mysql-master.servers.mongodirector.com:3306/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Erro ao cadastrar usuário');
       }
-    });
-
-    setNome('');
-    setDataNascimento('');
-    setEndereco('');
-    setEmail('');
-    setSenha('');
-    setConfirmarSenha('');
-    setBiografia('');
-    setExperiencia('');
-    setErroSenha(false);
+  
+      setShowSuccessMessage(true);
+  
+      setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 3000); // Oculta o sucesso após 3 segundos
+  
+      // Limpar campos após sucesso
+      setNome('');
+      setDataNascimento('');
+      setEndereco('');
+      setEmail('');
+      setSenha('');
+      setConfirmarSenha('');
+      setBiografia('');
+      setExperiencia('');
+      setErroSenha(false);
+  
+    } catch (error) {
+      console.error('Erro ao cadastrar usuário:', error.message);
+      // Tratar o erro conforme necessário
+    }
   };
+  
 
   return (
     <div className={styles.container}>
@@ -134,6 +152,11 @@ const Cadastro = () => {
         </label>
         <button type="submit">Cadastrar</button>
       </form>
+      {showSuccessMessage && (
+        <div className={styles.successMessage}>
+          Usuário cadastrado com sucesso!
+        </div>
+      )}
     </div>
   );
 };

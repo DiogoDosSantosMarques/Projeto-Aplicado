@@ -1,62 +1,113 @@
+/* Estilos para o formulário */
 .container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00856F;
+  font-size: 2.5rem;
+}
+
+.labelFoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.labelFoto img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.labelFoto input {
+  display: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+span {
+  font-weight: bold;
+  color: #00856F;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+button[type="submit"] {
+  background-color: #00856F;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #00573f;
+}
+
+.error {
+  color: red;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.successMessage {
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos adicionais */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
   }
-  
+
   h2 {
-    text-align: center;
-    margin-bottom: 5%;
+    font-size: 2rem;
   }
-  
-  .labelFoto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
+
   .labelFoto img {
-    width: 15%;
-    margin-left: 40%;
-    cursor: pointer;
+    width: 60px;
+    height: 60px;
   }
-  
-  .labelFoto input {
-    display: none;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  span {
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="date"],
-  textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
+
   button[type="submit"] {
-    background-color: #00856F;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
   }
-  
-  .error {
-    color: red;
-    margin-top: 5px;
-  }
-  
+}
