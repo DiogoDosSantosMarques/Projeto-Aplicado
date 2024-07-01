@@ -1,17 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./CuidadorId.module.css"; // Estilos específicos para a página do cuidador
-import cuidador from '../../img/cuidador.avif'; // Importe a imagem correta do cuidador
-import iconWhatsapp from '../../img/iconWhatsapp.png'; // Importe a imagem do icone do WhatsApp
+import styles from "./CuidadorId.module.css"; 
+import cuidador from '../../img/cuidador.avif'; 
+import iconWhatsapp from '../../img/iconWhatsapp.png'; 
 const CuidadorId = () => {
-  // Número de telefone do cuidador no formato internacional com código do país
   const numeroWhatsApp = "+5548988180759";
 
-  // Função para formatar o número do WhatsApp para a URL correta
   const formatarNumeroWhatsApp = (numero) => {
     // Remover caracteres não numéricos do número
     const numeroLimpo = numero.replace(/[^\d]/g, "");
-    // Montar a URL do WhatsApp com o número formatado
     return `https://wa.me/${numeroLimpo}`;
   };
 
@@ -39,5 +36,5 @@ const CuidadorId = () => {
     </div>
   );
 }
-
+ 
 export default CuidadorId;

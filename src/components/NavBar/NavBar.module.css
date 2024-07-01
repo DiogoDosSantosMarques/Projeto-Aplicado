@@ -8,7 +8,7 @@
     border-bottom-left-radius: 10px; /* Arredonda a ponta esquerda inferior */
     border-bottom-right-radius: 10px; /* Arredonda a ponta direita inferior */
   }
-  
+    
   ul {
     display: flex;
     gap: 50px;

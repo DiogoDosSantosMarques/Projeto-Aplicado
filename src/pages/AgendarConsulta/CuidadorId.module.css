@@ -11,8 +11,8 @@
   }
   
   .cuidadorPerfil img {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
-    height: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 300px; 
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
@@ -53,15 +53,15 @@
   }
   
   .whatsapp-icon {
-    width: 1%; /* Ajuste o tamanho do ícone conforme necessário */
-    height: 1%; /* Ajuste o tamanho do ícone conforme necessário */
+    width: 1%; 
+    height: 1%; 
     margin-right: 10px;
   }
   
   .btn:hover,
   .btn-whatsapp:hover {
     opacity: 0.9;
-  }
+  } 
   
   @media (max-width: 768px) {
     .cuidadorPerfil {
