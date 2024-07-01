@@ -1,0 +1,76 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .cuidadorPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .cuidadorPerfil img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 300px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .conteudo {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #00856F;
+    background-color: #f2f2f2;
+  }
+  
+  .conteudo h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .conteudo p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .btn,
+  .btn-whatsapp {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #00856F;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-whatsapp {
+    display: flex;
+    align-items: center;
+  }
+  
+  .whatsapp-icon {
+    width: 1%; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 1%; /* Ajuste o tamanho do ícone conforme necessário */
+    margin-right: 10px;
+  }
+  
+  .btn:hover,
+  .btn-whatsapp:hover {
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .cuidadorPerfil {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cuidadorPerfil img {
+      margin-bottom: 20px;
+    }
+  }
+  

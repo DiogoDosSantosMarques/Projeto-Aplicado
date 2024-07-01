@@ -41,7 +41,7 @@ const NavBar = () => {
 
     <NavLink to='/anuncio'>
 
-    Anuncio
+    Anúncio
 
     </NavLink>
 

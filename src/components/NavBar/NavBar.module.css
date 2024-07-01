@@ -1,22 +1,33 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5em 2em;
+    padding: 1.2em 2.5em; /* Aumentei o padding horizontal para 2.5em */
     background-color: #00856F;
     font-size: 20px;
-    
-}
-
-ul{
+    border-bottom-left-radius: 10px; /* Arredonda a ponta esquerda inferior */
+    border-bottom-right-radius: 10px; /* Arredonda a ponta direita inferior */
+  }
+  
+  ul {
     display: flex;
-    gap: 40px;
+    gap: 50px;
     list-style: none;
-    
-    
-}
-
-a{
+    margin: 0; /* Remova o espaçamento padrão da lista */
+    padding: 0; /* Remova o padding padrão da lista */
+  }
+  
+  ul li {
+    margin: 0; /* Remova o espaçamento entre os itens da lista */
+  }
+  
+  a {
     color: #fff;
-}
-
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+  }
+  
+  a:hover {
+    color: #f0f0f0; /* Cor do texto ao passar o mouse */
+  }
+  

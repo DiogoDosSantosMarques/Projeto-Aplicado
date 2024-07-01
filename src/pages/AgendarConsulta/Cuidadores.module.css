@@ -1,35 +1,51 @@
-.container{
-    
-  
+.container {
     width: 80%;
     margin: 0 auto;
-}
-
-.cuidadores{
+  }
+  
+  .cuidadores {
     margin-top: 10%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    
-   
-}
-
-.cuidadores div{
+  }
+  
+  .cuidador {
     width: 25%;
     margin-bottom: 5%;
     border: 1px solid #00856F;
     overflow: hidden;
-}
-
-.cuidadores div img{
+  }
+  
+  .cuidador img {
     width: 100%;
     height: 60%;
     object-fit: cover;
-    
-}
-
-.conteudo{
-    width: 100%;
-}
+  }
+  
+  .conteudo {
+    padding: 10px;
+  }
+  
+  .conteudo h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .conteudo p {
+    margin-bottom: 5px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #00856F;
+    colo4r: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
